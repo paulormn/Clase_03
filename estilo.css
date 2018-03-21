@@ -1,0 +1,102 @@
+body{
+	background:rgb(255,255, 255);
+	color:#000;
+	font-family: 'Roboto Mono', monospace;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Roboto Mono', monospace;
+	font-weight: bold;
+}
+
+/* un comentario en CSS se escribe de esta manera */
+
+a{color:hsl(0, 60%, 40%);}
+
+:hover{transition:  ease all 1s;}
+
+a:hover{color:hsl(0, 100%, 50%);}
+
+nav ol li{
+	font-size: 100%;
+	display: inline-block;
+	padding: 10px;
+}
+
+div.container{
+	margin:0em 5em;
+	position: relative;
+}
+
+h1{
+	border-bottom: 2px solid #000;
+}
+
+h2{
+	transform: translate(0, -10px) rotate(180deg);
+	position:absolute;
+	right:0;
+	top:0;
+}
+
+@media screen and (max-width: 1024px){
+	h2{display:none;}
+}
+
+@keyframes espaciado {
+	from {letter-spacing: 0.01rem;}
+	to {letter-spacing: 0.1rem;}
+}
+
+h4:hover {
+	animation-name: espaciado;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+figure{
+	background:rgba(255,255,255,.9);
+	padding:0.5rem;
+	margin:1rem 0 2rem 0;
+	text-align: center;
+}
+
+figure img{
+	width: 100%;
+	height:auto;
+	margin: 0 auto;
+
+}
+
+figure img:hover{
+	width: 100%;
+	height:auto;
+	-webkit-filter: invert(1);
+   filter: invert(1);
+}
+
+figcaption{
+	padding:0.5rem;
+	font-size: 90%;
+	letter-spacing: 0.01rem;
+}
+
+hr{
+	border-bottom: 2px solid #000;
+}
+
+svg{
+	border:5px solid #fff;
+}
+
+s, del{
+	background:rgba(0,0,0,.8); 
+	color:rgba(0,0,0,1);
+	text-decoration: none;
+}
+
+ins{
+	font-weight: bold;
+	text-decoration: none;
+}
